@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="./images/favicon.ico">
-  <title>windows利用Vsocode和ssh登入堡垒机中的容器 | Akira的知识铺(/≧▽≦)/</title>
+  <title>计算机视觉知识点总结 | Akira的知识铺(/≧▽≦)/</title>
   <meta name="author" content="Akira" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -13,21 +13,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="Linux, Vscode" />
+    <meta name="keywords" content="知识总结, 计算机视觉" />
   
-  <meta name="description" content="windows利用Vsocode和ssh登入堡垒机中的容器1 容器私钥&#x2F;堡垒机私钥 target.pem&#x2F;proxy.pem ps：Windos用户配置时，这两个钥匙最好放在C:&#x2F;User&#x2F;用户名&#x2F;里面，并且要进行如下设置，不然可能还要输入密码 右键文件属性-安全-高级-禁用继承-（选择第一个） 2 git bash设置私钥权限: chmod 60">
+  <meta name="description" content="计算机视觉知识点 idea  Video Transformer 渐进式正则 余弦学习率变化曲线 多任务学习 自监督方法 推理速度 注意力可视化 TSM Nowadays，most of action recognition method lost the long distance relationship of frams. Most of method use a clip of frame">
 <meta property="og:type" content="article">
-<meta property="og:title" content="windows利用Vsocode和ssh登入堡垒机中的容器">
-<meta property="og:url" content="http://smartxty.com/2022/03/09/windows%E5%88%A9%E7%94%A8ssh%E7%99%BB%E5%85%A5%E5%A0%A1%E5%9E%92%E6%9C%BA%E4%B8%AD%E7%9A%84%E5%AE%B9%E5%99%A8/index.html">
+<meta property="og:title" content="计算机视觉知识点总结">
+<meta property="og:url" content="http://smartxty.com/2022/07/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="Akira的知识铺(&#x2F;≧▽≦)&#x2F;">
-<meta property="og:description" content="windows利用Vsocode和ssh登入堡垒机中的容器1 容器私钥&#x2F;堡垒机私钥 target.pem&#x2F;proxy.pem ps：Windos用户配置时，这两个钥匙最好放在C:&#x2F;User&#x2F;用户名&#x2F;里面，并且要进行如下设置，不然可能还要输入密码 右键文件属性-安全-高级-禁用继承-（选择第一个） 2 git bash设置私钥权限: chmod 60">
+<meta property="og:description" content="计算机视觉知识点 idea  Video Transformer 渐进式正则 余弦学习率变化曲线 多任务学习 自监督方法 推理速度 注意力可视化 TSM Nowadays，most of action recognition method lost the long distance relationship of frams. Most of method use a clip of frame">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://smartxty.com/null">
-<meta property="article:published_time" content="2022-03-09T15:55:02.144Z">
-<meta property="article:modified_time" content="2022-07-07T05:41:34.933Z">
+<meta property="article:published_time" content="2022-07-07T10:20:24.678Z">
+<meta property="article:modified_time" content="2022-07-07T10:22:25.188Z">
 <meta property="article:author" content="Akira">
-<meta property="article:tag" content="Vscode">
-<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="计算机视觉">
+<meta property="article:tag" content="知识总结">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://smartxty.com/null">
 <meta name="twitter:site" content="@null">
@@ -215,7 +215,7 @@
         <span class="toc-progress-bar"></span>
     </h4>
     <div class="textwidget">
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#windows%E5%88%A9%E7%94%A8Vsocode%E5%92%8Cssh%E7%99%BB%E5%85%A5%E5%A0%A1%E5%9E%92%E6%9C%BA%E4%B8%AD%E7%9A%84%E5%AE%B9%E5%99%A8"><span class="toc-text">windows利用Vsocode和ssh登入堡垒机中的容器</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="toc-text">计算机视觉知识点</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Self-Attention"><span class="toc-text">Self-Attention</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Transformer"><span class="toc-text">Transformer</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%B7%E6%B7%86%E7%9F%A9%E9%98%B5%EF%BC%9A%E5%87%86%E7%A1%AE%E7%8E%87%E3%80%81%E7%B2%BE%E7%A1%AE%E7%8E%87%E3%80%81%E5%8F%AC%E5%9B%9E%E7%8E%87%E3%80%81%E7%89%B9%E5%BC%82%E7%8E%87"><span class="toc-text">混淆矩阵：准确率、精确率、召回率、特异率</span></a></li></ol></li></ol>
     </div>
 </aside>
                 
@@ -292,22 +292,22 @@
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center">windows利用Vsocode和ssh登入堡垒机中的容器</h1>
+                <h1 class="kratos-entry-title text-center">计算机视觉知识点总结</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><i class="fa fa-calendar"></i> 2022-03-09</li>
+                <li><i class="fa fa-calendar"></i> 2022-07-07</li>
                 <li><i class="fa fa-user"></i> 作者 Akira</li>
                 <li>
                     <i class="fa fa-edit"></i> 
                     
                     
-                        625
+                        ~4.18K
                     
                     字
                 </li>
                 
-                    <li id="/2022/03/09/windows%E5%88%A9%E7%94%A8ssh%E7%99%BB%E5%85%A5%E5%A0%A1%E5%9E%92%E6%9C%BA%E4%B8%AD%E7%9A%84%E5%AE%B9%E5%99%A8/" class="leancloud_visitors" data-flag-title="windows利用Vsocode和ssh登入堡垒机中的容器">
+                    <li id="/2022/07/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" class="leancloud_visitors" data-flag-title="计算机视觉知识点总结">
                         <i class="fa fa-eye"></i>
                         <span class="leancloud-visitors-count"> </span> 次阅读
                     </li>
@@ -318,29 +318,214 @@
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1657172494933"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1657189345188"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
                 <div class="kratos-post-inner-toc">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#windows%E5%88%A9%E7%94%A8Vsocode%E5%92%8Cssh%E7%99%BB%E5%85%A5%E5%A0%A1%E5%9E%92%E6%9C%BA%E4%B8%AD%E7%9A%84%E5%AE%B9%E5%99%A8"><span class="toc-number">1.</span> <span class="toc-text">windows利用Vsocode和ssh登入堡垒机中的容器</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="toc-number">1.</span> <span class="toc-text">计算机视觉知识点</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Self-Attention"><span class="toc-number">1.1.</span> <span class="toc-text">Self-Attention</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Transformer"><span class="toc-number">1.2.</span> <span class="toc-text">Transformer</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%B7%E6%B7%86%E7%9F%A9%E9%98%B5%EF%BC%9A%E5%87%86%E7%A1%AE%E7%8E%87%E3%80%81%E7%B2%BE%E7%A1%AE%E7%8E%87%E3%80%81%E5%8F%AC%E5%9B%9E%E7%8E%87%E3%80%81%E7%89%B9%E5%BC%82%E7%8E%87"><span class="toc-number">1.3.</span> <span class="toc-text">混淆矩阵：准确率、精确率、召回率、特异率</span></a></li></ol></li></ol>
                 </div>
             
             <hr />
-            <h1 id="windows利用Vsocode和ssh登入堡垒机中的容器"><a href="#windows利用Vsocode和ssh登入堡垒机中的容器" class="headerlink" title="windows利用Vsocode和ssh登入堡垒机中的容器"></a>windows利用Vsocode和ssh登入堡垒机中的容器</h1><p><strong>1</strong></p>
-<p>容器私钥&#x2F;堡垒机私钥</p>
-<p>target.pem&#x2F;proxy.pem</p>
-<p><strong>ps：Windos用户配置时，这两个钥匙最好放在C:&#x2F;User&#x2F;用户名&#x2F;里面，并且要进行如下设置，不然可能还要输入密码</strong></p>
-<p>右键文件属性-安全-高级-禁用继承-（选择第一个）</p>
-<p><strong>2</strong></p>
-<p>git bash设置私钥权限:</p>
-<p>chmod 600 target.pem&#x2F;chmod 600 proxy.pem</p>
-<p><strong>3</strong></p>
-<p>对容器 (container) 连线:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -o ProxyCommand=&quot;ssh -p 9022 -i /path/proxy.pem -W %h:%p root@scm.seu-palm.com&quot; -i /path/target.pem -p 34375 root@192.168.1.111</span><br></pre></td></tr></table></figure>
+            <h1 id="计算机视觉知识点"><a href="#计算机视觉知识点" class="headerlink" title="计算机视觉知识点"></a>计算机视觉知识点</h1><ul>
+<li><p>idea</p>
+<ul>
+<li>Video Transformer</li>
+<li>渐进式正则</li>
+<li>余弦学习率变化曲线</li>
+<li>多任务学习</li>
+<li>自监督方法</li>
+<li>推理速度</li>
+<li>注意力可视化</li>
+<li>TSM</li>
+<li>Nowadays，most of action recognition method lost the long distance relationship of frams.</li>
+<li>Most of method use a clip of frames , not entire video</li>
+<li>用全连接给inception的每一个kernal大小一定的权重</li>
+<li>双头的自注意力</li>
+<li>四元数行为识别</li>
+</ul>
+</li>
+<li><p>trick</p>
+<ul>
+<li><p>Regulization</p>
+<p><img src="/2022/07/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/3a134fe1-2f75-4a61-9b99-6ba415874e89-13368406.jpg" alt="https://api2.mubu.com/v3/document_image/3a134fe1-2f75-4a61-9b99-6ba415874e89-13368406.jpg"></p>
+<p><img src="/2022/07/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/f95d104c-5f4e-4096-8502-f3e9acf37f5c-13368406.jpg" alt="https://api2.mubu.com/v3/document_image/f95d104c-5f4e-4096-8502-f3e9acf37f5c-13368406.jpg"></p>
+</li>
+<li><p>Normalization</p>
+<ul>
+<li><p>Batch_Normalization：需要平移和缩放参数，具有减少前面输入都后面神经元的影响，且具有正则的作用，因为是每一个把它出门的均值和方差x’&#x3D;(1-momentum)<em>x+momentum</em>x’x′&#x3D;(1−momentum)∗x+momentum∗x′来更新下一个batch的均值和方差。mini_batch里面所有样本的某个通道的值作为一组，组内做Normalization，要求Batch大小比较大，<a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1502.03167.pdf%EF%BC%8C%E7%94%A8%E6%BB%91%E5%8A%A8%E5%B9%B3%E5%9D%87%E6%96%B9%E6%B3%95%E6%9B%B4%E6%96%B0%E5%9D%87%E5%80%BC%E5%92%8C%E6%96%B9%E5%B7%AE%EF%BC%8Ctest%E9%98%B6%E6%AE%B5%E7%9B%B4%E6%8E%A5%E4%BD%BF%E7%94%A8train%E9%98%B6%E6%AE%B5%E6%9B%B4%E6%96%B0%E5%AE%8C%E4%B9%8B%E5%90%8E%E7%9A%84%E5%9D%87%E5%80%BC%E5%92%8C%E6%96%B9%E5%B7%AE%E3%80%82%E7%84%B6%E5%90%8E%E7%94%A8">https://arxiv.org/pdf/1502.03167.pdf，用滑动平均方法更新均值和方差，test阶段直接使用train阶段更新完之后的均值和方差。然后用</a></p>
+<p><img src="/2022/07/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/828f1d9b-382e-4375-b901-1af5e34e3784-13368406.jpg" alt="https://api2.mubu.com/v3/document_image/828f1d9b-382e-4375-b901-1af5e34e3784-13368406.jpg"></p>
+<p><img src="/2022/07/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/ac71dec5-9d42-4367-bd00-ca03bd806531-13368406.jpg" alt="https://api2.mubu.com/v3/document_image/ac71dec5-9d42-4367-bd00-ca03bd806531-13368406.jpg"></p>
+<p>x′&#x3D;(1−momentum)∗x+momentum∗x′x’&#x3D;(1-momentum)<em>x+momentum</em>x’</p>
+</li>
+<li><p>Layer_Normalization</p>
+<ul>
+<li>单个样本的指定维度上的数据做Normalization，一般用于NLP，RNN，因为seq的Batch大小往往不一样<a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1607.06450.pdf">https://arxiv.org/pdf/1607.06450.pdf</a></li>
+</ul>
+</li>
+<li><p>Group_Normalization</p>
+</li>
+</ul>
+</li>
+<li><p>Dropout和Batch Nomalization不能一起使用，在train阶段dropout以p的比率丢掉几个神经元结果之后，为了保持与test阶段的均值差不多，会把其余值除以（1-p），均值变为1&#x2F;(1-p)1&#x2F;(1−p)倍，这时方差变为1&#x2F;(1-p)21&#x2F;(1−p)2倍，而test阶段由于是eval()模式，不进行dropout,均值和train阶段差不多，方差不同，但是Batch Normalization的均值和方差是使用train的，因此不匹配，结果拉跨。</p>
+<p>1&#x2F;(1−p)1&#x2F;(1-p)</p>
+<p>1&#x2F;(1−p)21&#x2F;(1-p)2</p>
+</li>
+<li><p>Stochastic Depth Dropout直接删除某一层的结果，<a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1603.09382.pdf">https://arxiv.org/pdf/1603.09382.pdf</a></p>
+</li>
+<li><p>单个样本的所有通道分组，所有组之间做Normalization，当Batch大小比较小时用，<a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1803.08494.pdf">https://arxiv.org/pdf/1803.08494.pdf</a></p>
+<p><img src="/2022/07/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/08244a35-8258-4a3e-a5f9-73e4d9aba030-13368406.jpg" alt="https://api2.mubu.com/v3/document_image/08244a35-8258-4a3e-a5f9-73e4d9aba030-13368406.jpg"></p>
+</li>
+<li><p>Rand Augment</p>
+</li>
+<li><p>Mixup</p>
+</li>
+<li><p>渐进式正则方法，<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2104.00298">https://arxiv.org/abs/2104.00298</a></p>
+<p><img src="/2022/07/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/d4b74568-54af-415b-8c91-35e106951153-13368406.jpg" alt="https://api2.mubu.com/v3/document_image/d4b74568-54af-415b-8c91-35e106951153-13368406.jpg"></p>
+</li>
+<li><p>预训练模型载入部分权重<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1dA411g7Ao">https://www.bilibili.com/video/BV1dA411g7Ao</a></p>
+</li>
+<li><p>修改dataloader<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Lf4y1q7Uq">https://www.bilibili.com/video/BV1Lf4y1q7Uq</a></p>
+</li>
+<li><p>注意力可视化方法<a target="_blank" rel="noopener" href="https://github.com/jacobgil/vit-explain%E3%80%81https://arxiv.org/pdf/2005.00928v2.pdf">https://github.com/jacobgil/vit-explain、https://arxiv.org/pdf/2005.00928v2.pdf</a></p>
+</li>
+<li><p>分布式GPU并行训练梯度和BN的均值和方差在GPU之间传输torch.distributed.lanuch<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1yt4y1e7sZ">https://www.bilibili.com/video/BV1yt4y1e7sZ</a></p>
+</li>
+<li><p>动态学习率,cosin学习率变化曲线scheduler.step()</p>
+<p><img src="/2022/07/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/75e6c5c4-3cbd-4bc0-902a-0135fe6f9b13-13368406.jpg" alt="https://api2.mubu.com/v3/document_image/75e6c5c4-3cbd-4bc0-902a-0135fe6f9b13-13368406.jpg"></p>
+</li>
+<li><p>Tensorboard可视化<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Qf4y1C7kz">https://www.bilibili.com/video/BV1Qf4y1C7kz</a></p>
+</li>
+<li><p>cnn和transformer的对比1.卷积存在归纳偏见（ inductive biases）：局部连接性和平移不变性，无法获取长距离的依赖关系2.耗费计算资源</p>
+</li>
+</ul>
+</li>
+<li><p>Temporal Fearure</p>
+<ul>
+<li>Temporal Convolutional Networks(TCN,2016,CVPR)<ul>
+<li>在seq上做卷积核空洞卷积，<a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1811.08383.pdf">https://arxiv.org/pdf/1811.08383.pdf</a></li>
+</ul>
+</li>
+<li>Temporal Relation Network (TRN,2018,ECCV)<ul>
+<li><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1711.08496v2.pdf">https://arxiv.org/pdf/1711.08496v2.pdf</a></li>
+</ul>
+</li>
+<li>Temporal Shift Module(TSM,2019,CVPR)<ul>
+<li>将部分通道前移到下一个下一帧，以在不增加计算量的情况下，获取时间特征，效果居然比I3D好，实验试一试<a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1811.08383v3.pdf">https://arxiv.org/pdf/1811.08383v3.pdf</a></li>
+</ul>
+</li>
+<li>None-Local Module(NL,2017,CVPR)<ul>
+<li><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1711.07971.pdf">https://arxiv.org/pdf/1711.07971.pdf</a></li>
+</ul>
+</li>
+<li></li>
+</ul>
+</li>
+<li><p>Attention</p>
+<ul>
+<li><p>ECA</p>
+</li>
+<li><p>SE</p>
+</li>
+<li><p>CBAM</p>
+</li>
+<li><p>None-Local</p>
+</li>
+<li><p>Axial Attention</p>
+</li>
+<li><h2 id="Self-Attention"><a href="#Self-Attention" class="headerlink" title="Self-Attention"></a>Self-Attention</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![&lt;https://api2.mubu.com/v3/document_image/f15eb32b-ab42-4775-abbd-b2b6336e3afd-13368406.jpg&gt;](&lt;https://api2.mubu.com/v3/document_image/f15eb32b-ab42-4775-abbd-b2b6336e3afd-13368406.jpg&gt;)</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><h2 id="Transformer"><a href="#Transformer" class="headerlink" title="Transformer"></a>Transformer</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![&lt;https://api2.mubu.com/v3/document_image/f76e82a9-6bd6-48e3-9b75-7f2f591ab436-13368406.jpg&gt;](&lt;https://api2.mubu.com/v3/document_image/f76e82a9-6bd6-48e3-9b75-7f2f591ab436-13368406.jpg&gt;)</span><br></pre></td></tr></table></figure>
 
-<p><strong>4</strong></p>
-<p>Vscode配置</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">Host</span> <span class="number">192.168</span><span class="number">.1</span><span class="number">.111</span></span><br><span class="line">  <span class="string">HostName</span> <span class="number">192.168</span><span class="number">.1</span><span class="number">.111</span></span><br><span class="line">  <span class="string">ProxyCommand</span> <span class="string">ssh</span> <span class="string">-p</span> <span class="number">9022</span> <span class="string">-i</span> <span class="string">C:/Users/用户名/.ssh/scm/proxy.pem</span> <span class="string">-W</span> <span class="string">%h:%p</span> <span class="string">root@scm.seu-palm.com</span></span><br><span class="line">  <span class="string">IdentityFile</span> <span class="string">C:/Users/用户名/.ssh/scm/target.pem</span></span><br><span class="line">  <span class="string">Port</span> <span class="number">34375</span></span><br><span class="line">  <span class="string">User</span> <span class="string">root</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>Hybird Visual Transformer</p>
+<ul>
+<li><p>使用ResNet之类的代替Transformer中的投影</p>
+<p><img src="/2022/07/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/2a596221-8e70-4f65-9bd7-14df0df18efc-13368406.jpg" alt="https://api2.mubu.com/v3/document_image/2a596221-8e70-4f65-9bd7-14df0df18efc-13368406.jpg"></p>
+</li>
+</ul>
+</li>
+<li><p>Visual Transformer（ViT）</p>
+<ul>
+<li><p>数据集比较大的时候才有点用，参数量比较小<a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2010.11929v2">https://arxiv.org/pdf/2010.11929v2</a></p>
+<p><img src="/2022/07/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/8da2a4a4-0c01-459e-90ff-ac9986e972f8-13368406.jpg" alt="https://api2.mubu.com/v3/document_image/8da2a4a4-0c01-459e-90ff-ac9986e972f8-13368406.jpg"></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Activation Function</p>
+<ul>
+<li><p>ReLU</p>
+</li>
+<li><p>GeLU</p>
+<ul>
+<li><p>为了增加模型的泛化能力，GELU引入随机正则，对输入乘以一个0，1组成的mask，mask服从伯努利分布，输出服从正态分布。效果很不错，下次实验试一试</p>
+<p><img src="/2022/07/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/7aafc94d-c162-4484-b289-9a51bfc5807b-13368406.jpg" alt="https://api2.mubu.com/v3/document_image/7aafc94d-c162-4484-b289-9a51bfc5807b-13368406.jpg"></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>评估方法</p>
+<ul>
+<li><h2 id="混淆矩阵：准确率、精确率、召回率、特异率"><a href="#混淆矩阵：准确率、精确率、召回率、特异率" class="headerlink" title="混淆矩阵：准确率、精确率、召回率、特异率"></a>混淆矩阵：准确率、精确率、召回率、特异率</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![&lt;https://api2.mubu.com/v3/document_image/1d365880-634b-4a60-8dc6-e4fa72cea692-13368406.jpg&gt;](&lt;https://api2.mubu.com/v3/document_image/1d365880-634b-4a60-8dc6-e4fa72cea692-13368406.jpg&gt;)</span><br><span class="line"></span><br><span class="line">![&lt;https://api2.mubu.com/v3/document_image/e60b5316-c100-4eb1-b387-eded9ce56109-13368406.jpg&gt;](&lt;https://api2.mubu.com/v3/document_image/e60b5316-c100-4eb1-b387-eded9ce56109-13368406.jpg&gt;)</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>论文词汇</p>
+<ul>
+<li>However, their costly memory access causes their actual latency to be signiﬁcantly larger than that of the convolutional networks [Local relation networks for image recognition].</li>
+</ul>
+</li>
+<li><p>常见网络</p>
+<ul>
+<li><p>EffcientNetV1&#x2F;V2</p>
+<p><img src="/2022/07/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/5f1b5109-153d-4927-beea-75b4ae48176a-13368406.jpg" alt="https://api2.mubu.com/v3/document_image/5f1b5109-153d-4927-beea-75b4ae48176a-13368406.jpg"></p>
+<p><img src="/2022/07/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/20bac1ed-4dd1-484d-94df-2ce11a6ddcd1-13368406.jpg" alt="https://api2.mubu.com/v3/document_image/20bac1ed-4dd1-484d-94df-2ce11a6ddcd1-13368406.jpg"></p>
+</li>
+</ul>
+</li>
+<li><p>数理统计</p>
+<ul>
+<li><p>概率是已知模型和参数，推数据。</p>
+</li>
+<li><p>统计是已知数据，推模型和参数。</p>
+</li>
+<li><p>最大似然估计（MLE）已知参数估计结果，使得似然函数P(x∣θ)最大</p>
+</li>
+<li><p>最大后验概率估计（MAP）是求参数θ，使得P(x∣θ)p(θ)最大。</p>
+<p><img src="/2022/07/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/a4645efe-3be7-4e3b-9601-2f69e46dfb7f-13368406.jpg" alt="https://api2.mubu.com/v3/document_image/a4645efe-3be7-4e3b-9601-2f69e46dfb7f-13368406.jpg"></p>
+</li>
+<li><p>先验概率p(θ)</p>
+</li>
+</ul>
+</li>
+<li><p>评价指标</p>
+<ul>
+<li><p>FLOPS每秒浮点运算次数</p>
+</li>
+<li><p>FLOPs浮点运算数，即计算量，GFLOPs表示10亿次浮点运算数。每一层卷积层的计算量公式如上图所示。</p>
+<p><img src="/2022/07/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/385aed0b-4ce2-456f-82b2-211aff3acbfa-13368406.jpg" alt="https://api2.mubu.com/v3/document_image/385aed0b-4ce2-456f-82b2-211aff3acbfa-13368406.jpg"></p>
+</li>
+<li><p>torchstat库from torchstat import statimport torchvision.models as modelsmodel &#x3D; model.alexnet()stat(model, (3, 224, 224))</p>
+</li>
+<li><p>吞吐量库 <a target="_blank" rel="noopener" href="https://github.com/rwightman/">https://github.com/rwightman/</a> pytorch-image-models</p>
+</li>
+</ul>
+</li>
+<li><p>自监督</p>
+<ul>
+<li><p>前置任务（Pretext task）：恢复被损毁的输入、去噪自编码、上下文自编码、跨通道自动编码（色彩化）、跟踪、分割、块排序、特征聚类。</p>
+</li>
+<li><p>对比学习（Contrastive learning）：InfoNCE(noise-contrastive estimation)</p>
+<p><img src="/2022/07/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/95137496-439f-4c5b-90b2-f3f57888c4ef-13368406.jpg" alt="https://api2.mubu.com/v3/document_image/95137496-439f-4c5b-90b2-f3f57888c4ef-13368406.jpg"></p>
+</li>
+</ul>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://www.notion.so/8e6b95ff60f248f5a493f3a3ec393a06">各种卷积操作</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.notion.so/Transformer-07c853dec4764c79914b4d7d51577287">Transformer</a></p>
+
         </div>
         
             <div class="kratos-copyright text-center clearfix">
@@ -395,7 +580,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "http://smartxty.com/2022/03/09/windows%E5%88%A9%E7%94%A8ssh%E7%99%BB%E5%85%A5%E5%A0%A1%E5%9E%92%E6%9C%BA%E4%B8%AD%E7%9A%84%E5%AE%B9%E5%99%A8/",
+                text: "http://smartxty.com/2022/07/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -407,12 +592,20 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "http://smartxty.com/2022/03/09/windows%E5%88%A9%E7%94%A8ssh%E7%99%BB%E5%85%A5%E5%A0%A1%E5%9E%92%E6%9C%BA%E4%B8%AD%E7%9A%84%E5%AE%B9%E5%99%A8/";
-            const title         = "「windows利用Vsocode和ssh登入堡垒机中的容器」";
-            const excerpt       = `windows利用Vsocode和ssh登入堡垒机中的容器1
-容器私钥&#x2F;堡垒机私钥
-target.pem&#x2F;proxy.pem
-ps：Windos用户配置时，这两个钥匙最好放在C:&#x2F;User&#x2F;用户...`;
+            const hostUrl       = "http://smartxty.com/2022/07/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/";
+            const title         = "「计算机视觉知识点总结」";
+            const excerpt       = `计算机视觉知识点
+idea
+
+Video Transformer
+渐进式正则
+余弦学习率变化曲线
+多任务学习
+自监督方法
+推理速度
+注意力可视化
+TSM
+Nowadays，most of action recognition meth...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -431,7 +624,7 @@ ps：Windos用户配置时，这两个钥匙最好放在C:&#x2F;User&#x2F;用户
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/Linux/" rel="tag">Linux</a>, <a class="tag-none-link" href="/tags/Vscode/" rel="tag">Vscode</a>
+                    <a class="tag-none-link" href="/tags/%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" rel="tag">知识总结</a>, <a class="tag-none-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/" rel="tag">计算机视觉</a>
                 </div>
                 <div class="pull-date">
                 <span>最后编辑：2022-07-07</span>
@@ -443,13 +636,9 @@ ps：Windos用户配置时，这两个钥匙最好放在C:&#x2F;User&#x2F;用户
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" Mask R-CNN" href="/2022/03/05/MaskedRCNN/">&lt; 上一篇</a>
+                <a title=" Leecode刷题笔记" href="/2022/07/07/Leecode刷题记录/">&lt; 上一篇</a>
             </div>
             
-            
-            <div class="nav-next clearfix">
-                <a title=" 论文写作积累" href="/2022/04/29/论文写作积累/">下一篇 &gt;</a>
-            </div>
             
         </nav>
     
@@ -467,7 +656,7 @@ ps：Windos用户配置时，这两个钥匙最好放在C:&#x2F;User&#x2F;用户
         appKey: "KWNYB1VufKmkMJFwUVUUE54K",
         visitor: "true",
         enableQQ: "true",
-        path: "/2022/03/09/windows%E5%88%A9%E7%94%A8ssh%E7%99%BB%E5%85%A5%E5%A0%A1%E5%9E%92%E6%9C%BA%E4%B8%AD%E7%9A%84%E5%AE%B9%E5%99%A8/",
+        path: "/2022/07/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/",
       });
     };
     if (typeof Valine === "undefined") {

@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="./images/favicon.ico">
-  <title>windows利用Vsocode和ssh登入堡垒机中的容器 | Akira的知识铺(/≧▽≦)/</title>
+  <title>Leecode刷题笔记 | Akira的知识铺(/≧▽≦)/</title>
   <meta name="author" content="Akira" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -13,21 +13,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="Linux, Vscode" />
+    <meta name="keywords" content="Leecode" />
   
-  <meta name="description" content="windows利用Vsocode和ssh登入堡垒机中的容器1 容器私钥&#x2F;堡垒机私钥 target.pem&#x2F;proxy.pem ps：Windos用户配置时，这两个钥匙最好放在C:&#x2F;User&#x2F;用户名&#x2F;里面，并且要进行如下设置，不然可能还要输入密码 右键文件属性-安全-高级-禁用继承-（选择第一个） 2 git bash设置私钥权限: chmod 60">
+  <meta name="description" content="Leecode刷题遇到的一些不了解的函数以及知识点ps：使用的是python 哈希表：  123456import collectionsclass Solution:    def singleNumber(self, nums: List[int]) -&gt; int:        freq &#x3D; collections.Counter(nums)        ans &#x3D; [num for">
 <meta property="og:type" content="article">
-<meta property="og:title" content="windows利用Vsocode和ssh登入堡垒机中的容器">
-<meta property="og:url" content="http://smartxty.com/2022/03/09/windows%E5%88%A9%E7%94%A8ssh%E7%99%BB%E5%85%A5%E5%A0%A1%E5%9E%92%E6%9C%BA%E4%B8%AD%E7%9A%84%E5%AE%B9%E5%99%A8/index.html">
+<meta property="og:title" content="Leecode刷题笔记">
+<meta property="og:url" content="http://smartxty.com/2022/07/07/Leecode%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/index.html">
 <meta property="og:site_name" content="Akira的知识铺(&#x2F;≧▽≦)&#x2F;">
-<meta property="og:description" content="windows利用Vsocode和ssh登入堡垒机中的容器1 容器私钥&#x2F;堡垒机私钥 target.pem&#x2F;proxy.pem ps：Windos用户配置时，这两个钥匙最好放在C:&#x2F;User&#x2F;用户名&#x2F;里面，并且要进行如下设置，不然可能还要输入密码 右键文件属性-安全-高级-禁用继承-（选择第一个） 2 git bash设置私钥权限: chmod 60">
+<meta property="og:description" content="Leecode刷题遇到的一些不了解的函数以及知识点ps：使用的是python 哈希表：  123456import collectionsclass Solution:    def singleNumber(self, nums: List[int]) -&gt; int:        freq &#x3D; collections.Counter(nums)        ans &#x3D; [num for">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://smartxty.com/null">
-<meta property="article:published_time" content="2022-03-09T15:55:02.144Z">
-<meta property="article:modified_time" content="2022-07-07T05:41:34.933Z">
+<meta property="article:published_time" content="2022-07-07T10:16:22.638Z">
+<meta property="article:modified_time" content="2022-07-07T10:19:26.607Z">
 <meta property="article:author" content="Akira">
-<meta property="article:tag" content="Vscode">
-<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="Leecode">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://smartxty.com/null">
 <meta name="twitter:site" content="@null">
@@ -215,7 +214,7 @@
         <span class="toc-progress-bar"></span>
     </h4>
     <div class="textwidget">
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#windows%E5%88%A9%E7%94%A8Vsocode%E5%92%8Cssh%E7%99%BB%E5%85%A5%E5%A0%A1%E5%9E%92%E6%9C%BA%E4%B8%AD%E7%9A%84%E5%AE%B9%E5%99%A8"><span class="toc-text">windows利用Vsocode和ssh登入堡垒机中的容器</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Leecode%E5%88%B7%E9%A2%98%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%8D%E4%BA%86%E8%A7%A3%E7%9A%84%E5%87%BD%E6%95%B0%E4%BB%A5%E5%8F%8A%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="toc-text">Leecode刷题遇到的一些不了解的函数以及知识点</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#ps%EF%BC%9A%E4%BD%BF%E7%94%A8%E7%9A%84%E6%98%AFpython"><span class="toc-text">ps：使用的是python</span></a></li></ol></li></ol>
     </div>
 </aside>
                 
@@ -292,22 +291,22 @@
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center">windows利用Vsocode和ssh登入堡垒机中的容器</h1>
+                <h1 class="kratos-entry-title text-center">Leecode刷题笔记</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><i class="fa fa-calendar"></i> 2022-03-09</li>
+                <li><i class="fa fa-calendar"></i> 2022-07-07</li>
                 <li><i class="fa fa-user"></i> 作者 Akira</li>
                 <li>
                     <i class="fa fa-edit"></i> 
                     
                     
-                        625
+                        924
                     
                     字
                 </li>
                 
-                    <li id="/2022/03/09/windows%E5%88%A9%E7%94%A8ssh%E7%99%BB%E5%85%A5%E5%A0%A1%E5%9E%92%E6%9C%BA%E4%B8%AD%E7%9A%84%E5%AE%B9%E5%99%A8/" class="leancloud_visitors" data-flag-title="windows利用Vsocode和ssh登入堡垒机中的容器">
+                    <li id="/2022/07/07/Leecode%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/" class="leancloud_visitors" data-flag-title="Leecode刷题笔记">
                         <i class="fa fa-eye"></i>
                         <span class="leancloud-visitors-count"> </span> 次阅读
                     </li>
@@ -318,29 +317,53 @@
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1657172494933"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1657189166607"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
                 <div class="kratos-post-inner-toc">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#windows%E5%88%A9%E7%94%A8Vsocode%E5%92%8Cssh%E7%99%BB%E5%85%A5%E5%A0%A1%E5%9E%92%E6%9C%BA%E4%B8%AD%E7%9A%84%E5%AE%B9%E5%99%A8"><span class="toc-number">1.</span> <span class="toc-text">windows利用Vsocode和ssh登入堡垒机中的容器</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Leecode%E5%88%B7%E9%A2%98%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%8D%E4%BA%86%E8%A7%A3%E7%9A%84%E5%87%BD%E6%95%B0%E4%BB%A5%E5%8F%8A%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="toc-number">1.</span> <span class="toc-text">Leecode刷题遇到的一些不了解的函数以及知识点</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#ps%EF%BC%9A%E4%BD%BF%E7%94%A8%E7%9A%84%E6%98%AFpython"><span class="toc-number">1.1.</span> <span class="toc-text">ps：使用的是python</span></a></li></ol></li></ol>
                 </div>
             
             <hr />
-            <h1 id="windows利用Vsocode和ssh登入堡垒机中的容器"><a href="#windows利用Vsocode和ssh登入堡垒机中的容器" class="headerlink" title="windows利用Vsocode和ssh登入堡垒机中的容器"></a>windows利用Vsocode和ssh登入堡垒机中的容器</h1><p><strong>1</strong></p>
-<p>容器私钥&#x2F;堡垒机私钥</p>
-<p>target.pem&#x2F;proxy.pem</p>
-<p><strong>ps：Windos用户配置时，这两个钥匙最好放在C:&#x2F;User&#x2F;用户名&#x2F;里面，并且要进行如下设置，不然可能还要输入密码</strong></p>
-<p>右键文件属性-安全-高级-禁用继承-（选择第一个）</p>
-<p><strong>2</strong></p>
-<p>git bash设置私钥权限:</p>
-<p>chmod 600 target.pem&#x2F;chmod 600 proxy.pem</p>
-<p><strong>3</strong></p>
-<p>对容器 (container) 连线:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -o ProxyCommand=&quot;ssh -p 9022 -i /path/proxy.pem -W %h:%p root@scm.seu-palm.com&quot; -i /path/target.pem -p 34375 root@192.168.1.111</span><br></pre></td></tr></table></figure>
+            <h1 id="Leecode刷题遇到的一些不了解的函数以及知识点"><a href="#Leecode刷题遇到的一些不了解的函数以及知识点" class="headerlink" title="Leecode刷题遇到的一些不了解的函数以及知识点"></a>Leecode刷题遇到的一些不了解的函数以及知识点</h1><h2 id="ps：使用的是python"><a href="#ps：使用的是python" class="headerlink" title="ps：使用的是python"></a>ps：使用的是python</h2><ol>
+<li>哈希表：</li>
+</ol>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> collections</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    def <span class="title function_">singleNumber</span>(self, <span class="attr">nums</span>: <span class="title class_">List</span>[int]) -&gt; <span class="attr">int</span>:</span><br><span class="line">        freq = collections.<span class="title class_">Counter</span>(nums)</span><br><span class="line">        ans = [num <span class="keyword">for</span> num, occ <span class="keyword">in</span> freq.<span class="title function_">items</span>() <span class="keyword">if</span> occ == <span class="number">1</span>][<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">return</span> ans</span><br></pre></td></tr></table></figure>
 
-<p><strong>4</strong></p>
-<p>Vscode配置</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">Host</span> <span class="number">192.168</span><span class="number">.1</span><span class="number">.111</span></span><br><span class="line">  <span class="string">HostName</span> <span class="number">192.168</span><span class="number">.1</span><span class="number">.111</span></span><br><span class="line">  <span class="string">ProxyCommand</span> <span class="string">ssh</span> <span class="string">-p</span> <span class="number">9022</span> <span class="string">-i</span> <span class="string">C:/Users/用户名/.ssh/scm/proxy.pem</span> <span class="string">-W</span> <span class="string">%h:%p</span> <span class="string">root@scm.seu-palm.com</span></span><br><span class="line">  <span class="string">IdentityFile</span> <span class="string">C:/Users/用户名/.ssh/scm/target.pem</span></span><br><span class="line">  <span class="string">Port</span> <span class="number">34375</span></span><br><span class="line">  <span class="string">User</span> <span class="string">root</span></span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>reduce()</li>
+</ol>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> functools <span class="keyword">import</span> reduce</span><br><span class="line"><span class="title function_">reduce</span>(lambda x, <span class="attr">y</span>: x+y, [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>])</span><br><span class="line">累加操作</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>ord()：返回asci码</li>
+</ol>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;<span class="title function_">ord</span>(<span class="string">&#x27;a&#x27;</span>)</span><br><span class="line"><span class="number">97</span></span><br><span class="line">&gt;&gt;&gt; <span class="title function_">ord</span>(<span class="string">&#x27;b&#x27;</span>)</span><br><span class="line"><span class="number">98</span></span><br><span class="line">&gt;&gt;&gt; <span class="title function_">ord</span>(<span class="string">&#x27;c&#x27;</span>)</span><br><span class="line"><span class="number">99</span></span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>chr()：把ascii转为字母</li>
+</ol>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; <span class="title function_">chr</span>(<span class="number">97</span>)</span><br><span class="line"><span class="string">&#x27;a&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li><p>itertools.product(a,b)：笛卡尔积</p>
+</li>
+<li><p>zip：打包为元组的列表</p>
+</li>
+</ol>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">&gt;&gt;&gt; b = [<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line">&gt;&gt;&gt; c = [<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>]</span><br><span class="line">&gt;&gt;&gt; zipped = <span class="title function_">zip</span>(a,b)     # 打包为元组的列表</span><br><span class="line">[(<span class="number">1</span>, <span class="number">4</span>), (<span class="number">2</span>, <span class="number">5</span>), (<span class="number">3</span>, <span class="number">6</span>)]</span><br></pre></td></tr></table></figure>
+
+<ol start="7">
+<li>set()：创建不重复的元素集合[‘r’, ‘b’, ‘u’, ‘n’]</li>
+</ol>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A=<span class="title function_">set</span>()</span><br><span class="line">A.<span class="title function_">add</span>(<span class="number">1</span>)</span><br><span class="line">A.<span class="title function_">remove</span>(<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+<ol start="8">
+<li>“&#x2F;”，这是传统的除法，3&#x2F;2&#x3D;1.5</li>
+</ol>
+<p>“&#x2F;&#x2F;”，在python中，这个叫“地板除”，3&#x2F;&#x2F;2&#x3D;1</p>
+<p>“%”，这个是取模操作，也就是区余数，4%2&#x3D;0，5%2&#x3D;1</p>
+
         </div>
         
             <div class="kratos-copyright text-center clearfix">
@@ -395,7 +418,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "http://smartxty.com/2022/03/09/windows%E5%88%A9%E7%94%A8ssh%E7%99%BB%E5%85%A5%E5%A0%A1%E5%9E%92%E6%9C%BA%E4%B8%AD%E7%9A%84%E5%AE%B9%E5%99%A8/",
+                text: "http://smartxty.com/2022/07/07/Leecode%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -407,12 +430,12 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "http://smartxty.com/2022/03/09/windows%E5%88%A9%E7%94%A8ssh%E7%99%BB%E5%85%A5%E5%A0%A1%E5%9E%92%E6%9C%BA%E4%B8%AD%E7%9A%84%E5%AE%B9%E5%99%A8/";
-            const title         = "「windows利用Vsocode和ssh登入堡垒机中的容器」";
-            const excerpt       = `windows利用Vsocode和ssh登入堡垒机中的容器1
-容器私钥&#x2F;堡垒机私钥
-target.pem&#x2F;proxy.pem
-ps：Windos用户配置时，这两个钥匙最好放在C:&#x2F;User&#x2F;用户...`;
+            const hostUrl       = "http://smartxty.com/2022/07/07/Leecode%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/";
+            const title         = "「Leecode刷题笔记」";
+            const excerpt       = `Leecode刷题遇到的一些不了解的函数以及知识点ps：使用的是python
+哈希表：
+
+123456import collectionsclass Solution:    def singleNumber(self, nums: ...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -431,7 +454,7 @@ ps：Windos用户配置时，这两个钥匙最好放在C:&#x2F;User&#x2F;用户
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/Linux/" rel="tag">Linux</a>, <a class="tag-none-link" href="/tags/Vscode/" rel="tag">Vscode</a>
+                    <a class="tag-none-link" href="/tags/Leecode/" rel="tag">Leecode</a>
                 </div>
                 <div class="pull-date">
                 <span>最后编辑：2022-07-07</span>
@@ -443,12 +466,12 @@ ps：Windos用户配置时，这两个钥匙最好放在C:&#x2F;User&#x2F;用户
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" Mask R-CNN" href="/2022/03/05/MaskedRCNN/">&lt; 上一篇</a>
+                <a title=" 论文写作积累" href="/2022/04/29/论文写作积累/">&lt; 上一篇</a>
             </div>
             
             
             <div class="nav-next clearfix">
-                <a title=" 论文写作积累" href="/2022/04/29/论文写作积累/">下一篇 &gt;</a>
+                <a title=" 计算机视觉知识点总结" href="/2022/07/07/计算机视觉知识点总结/">下一篇 &gt;</a>
             </div>
             
         </nav>
@@ -467,7 +490,7 @@ ps：Windos用户配置时，这两个钥匙最好放在C:&#x2F;User&#x2F;用户
         appKey: "KWNYB1VufKmkMJFwUVUUE54K",
         visitor: "true",
         enableQQ: "true",
-        path: "/2022/03/09/windows%E5%88%A9%E7%94%A8ssh%E7%99%BB%E5%85%A5%E5%A0%A1%E5%9E%92%E6%9C%BA%E4%B8%AD%E7%9A%84%E5%AE%B9%E5%99%A8/",
+        path: "/2022/07/07/Leecode%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/",
       });
     };
     if (typeof Valine === "undefined") {
