@@ -328,6 +328,11 @@ ps：Windos用户配置时，这两个钥匙最好放在C:&#x2F;User&#x2F;用户
                         
                             <!-- 当前仅支持valine/waline自带的统计功能 -->
                             
+                                <a id="/2022/03/09/windows%E5%88%A9%E7%94%A8ssh%E7%99%BB%E5%85%A5%E5%A0%A1%E5%9E%92%E6%9C%BA%E4%B8%AD%E7%9A%84%E5%AE%B9%E5%99%A8/" class="leancloud_visitors" data-flag-title="windows利用Vsocode和ssh登入堡垒机中的容器">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
                         
                         
                             <!-- 当前仅支持waline自带的统计功能 -->
@@ -348,6 +353,36 @@ ps：Windos用户配置时，这两个钥匙最好放在C:&#x2F;User&#x2F;用户
 
     <div class="hidden">
         <!-- 加载文章阅读对应的统计功能，评论自带的那种 -->
+        
+            <div
+  id="v-comments"
+  class="post-comments"
+></div>
+<script>
+  var load_comm = () => {
+    const init = () => {
+      new Valine({
+        el: "#v-comments",
+        appId: "ysdaQzM6dAkbF6xcIlOF40wY-gzGzoHsz",
+        appKey: "KWNYB1VufKmkMJFwUVUUE54K",
+        visitor: "true",
+        enableQQ: "true",
+        path: "/tags/Linux/index.html",
+      });
+    };
+    if (typeof Valine === "undefined") {
+      const src = 'https://unpkg.com/valine/dist/Valine.min.js';
+      $.getScript(src, init);
+    } else {
+      init();
+    }
+  };
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a target="_blank" rel="noopener" href="https://valine.js.org/">comments powered by Valine.</a></noscript
+>
+
         
     </div>
 
